@@ -1,32 +1,149 @@
 $(document).ready(function ($) {
-    $('.section-main-content-slider-items-star_section, .section-main-content-slider-items-oil_section').slick({
+    $('.section-stocks-slider').slick({
+        // $('.section-star-slider, .section-stocks-slider, .section-oil-slider, .section-stocks-slider, .section-exchange_green-slider, .section-exchange_violet-slider').slick({
         infinite: true,
-        slidesToShow: 4,
-        slidesToScroll: 4,
+        slidesToShow: 3,
+        slidesToScroll: 3,
         dots: true,
         dotsClass: "custom-dots",
         // autoplay: true,
         // autoplaySpeed: 7000,
-        responsive: [{
-            breakpoint: 481,
-            settings: {
-                slidesToShow: 1,
-                arrows: true,
-                dots: true,
-                slidesToScroll: 1
-            }
-        },
-            {
-                breakpoint: 320,
-                settings: {
-                    slidesToShow: 1,
-                    arrows: false,
-                    dots: false,
-                    slidesToScroll: 1
-                }
-            }]
-
+        // responsive: [{
+        //     breakpoint: 481,
+        //     settings: {
+        //         slidesToShow: 1,
+        //         arrows: true,
+        //         dots: true,
+        //         slidesToScroll: 1
+        //     }
+        // },
+        //     {
+        //         breakpoint: 320,
+        //         settings: {
+        //             slidesToShow: 1,
+        //             arrows: false,
+        //             dots: false,
+        //             slidesToScroll: 1
+        //         }
+        //     }]
     });
+
+    $('.section-oil-slider').slick({
+        // $('.section-star-slider, .section-stocks-slider, .section-oil-slider, .section-stocks-slider, .section-exchange_green-slider, .section-exchange_violet-slider').slick({
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        dots: true,
+        dotsClass: "custom-dots",
+        // autoplay: true,
+        // autoplaySpeed: 7000,
+        // responsive: [{
+        //     breakpoint: 481,
+        //     settings: {
+        //         slidesToShow: 1,
+        //         arrows: true,
+        //         dots: true,
+        //         slidesToScroll: 1
+        //     }
+        // },
+        //     {
+        //         breakpoint: 320,
+        //         settings: {
+        //             slidesToShow: 1,
+        //             arrows: false,
+        //             dots: false,
+        //             slidesToScroll: 1
+        //         }
+        //     }]
+    });
+
+    $('.section-star-slider').slick({
+        // $('.section-star-slider, .section-stocks-slider, .section-oil-slider, .section-stocks-slider, .section-exchange_green-slider, .section-exchange_violet-slider').slick({
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        dots: true,
+        dotsClass: "custom-dots",
+        // autoplay: true,
+        // autoplaySpeed: 7000,
+        // responsive: [{
+        //     breakpoint: 481,
+        //     settings: {
+        //         slidesToShow: 1,
+        //         arrows: true,
+        //         dots: true,
+        //         slidesToScroll: 1
+        //     }
+        // },
+        //     {
+        //         breakpoint: 320,
+        //         settings: {
+        //             slidesToShow: 1,
+        //             arrows: false,
+        //             dots: false,
+        //             slidesToScroll: 1
+        //         }
+        //     }]
+    });
+
+    $('.section-exchange_green-slider').slick({
+        // $('.section-star-slider, .section-stocks-slider, .section-oil-slider, .section-stocks-slider, .section-exchange_green-slider, .section-exchange_violet-slider').slick({
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        dots: true,
+        dotsClass: "custom-dots",
+        // autoplay: true,
+        // autoplaySpeed: 7000,
+        // responsive: [{
+        //     breakpoint: 481,
+        //     settings: {
+        //         slidesToShow: 1,
+        //         arrows: true,
+        //         dots: true,
+        //         slidesToScroll: 1
+        //     }
+        // },
+        //     {
+        //         breakpoint: 320,
+        //         settings: {
+        //             slidesToShow: 1,
+        //             arrows: false,
+        //             dots: false,
+        //             slidesToScroll: 1
+        //         }
+        //     }]
+    });
+
+    $('.section-exchange_violet-slider').slick({
+        // $('.section-star-slider, .section-stocks-slider, .section-oil-slider, .section-stocks-slider, .section-exchange_green-slider, .section-exchange_violet-slider').slick({
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        dots: true,
+        dotsClass: "custom-dots",
+        // autoplay: true,
+        // autoplaySpeed: 7000,
+        // responsive: [{
+        //     breakpoint: 481,
+        //     settings: {
+        //         slidesToShow: 1,
+        //         arrows: true,
+        //         dots: true,
+        //         slidesToScroll: 1
+        //     }
+        // },
+        //     {
+        //         breakpoint: 320,
+        //         settings: {
+        //             slidesToShow: 1,
+        //             arrows: false,
+        //             dots: false,
+        //             slidesToScroll: 1
+        //         }
+        //     }]
+    });
+
 
     // section-main-content-slider-items-oil_section
 
@@ -72,22 +189,29 @@ $(document).ready(function ($) {
         $(this).toggleClass('active');
     });
 
+
     $('.section-main-content-progress-bar-item-star-border').click(function () {
         $('.section-star-slider').addClass('active');
         $('.section-oil-slider').removeClass('active');
         $('.section-stocks-slider').removeClass('active');
+        $('.section-exchange_green-slider').removeClass('active');
+        $('.section-exchange_violet-slider').removeClass('active');
     });
 
     $('.section-main-content-progress-bar-item-oil-border').click(function () {
         $('.section-oil-slider').addClass('active');
         $('.section-star-slider').removeClass('active');
         $('.section-stocks-slider').removeClass('active');
+        $('.section-exchange_green-slider').removeClass('active');
+        $('.section-exchange_violet-slider').removeClass('active');
     });
 
     $('.section-main-content-progress-bar-item-rating-border').click(function () {
         $('.section-stocks-slider').addClass('active');
         $('.section-oil-slider').removeClass('active');
         $('.section-exchange_green-slider').removeClass('active');
+        $('.section-exchange_violet-slider').removeClass('active');
+        $('.section-star-slider').removeClass('active');
     });
 
     $('.section-main-content-progress-bar-item-exch-grn-border').click(function () {

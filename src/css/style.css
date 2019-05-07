@@ -145,6 +145,7 @@
 .section-exchange_violet-slider {
     /*display: block;*/
     display: none;
+    /*width: 800px*/
 }
 
 .section-star-slider.active,
@@ -154,6 +155,11 @@
 .section-exchange_violet-slider.active {
     /*display: block;*/
     display: block;
+    /*width: 800px;*/
+}
+
+.slider-wrapper {
+    width: 800px;
 }
 
 
@@ -166,6 +172,10 @@
 
 .bar-item.active {
     transform: scale(1.2);
+}
+
+.slick-track {
+    display: none;
 }
 
 .section-main-content-progress-bar-items {
