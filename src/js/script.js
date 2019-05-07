@@ -85,13 +85,10 @@ $(document).ready(function ($) {
     // TODO: add 4 different content in sliders to each round image
     // TODO: add simple toggling of NEW different content in slider
 
-
     // $('.section-main-content-progress-bar-item-oil-border').click(function () {
     //     $('.section-main-content-slider-items-star_section').addClass('not-active');
     //     $('.section-main-content-slider-items-oil_section').addClass('active')
     // });
-
-
 
     // $('.section-main-content-progress-bar-item-rating-border').click(function () {
     //     $('.section-main-content-slider-items-oil_section').addClass('not-active');
