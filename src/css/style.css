@@ -138,6 +138,25 @@
     width: 950px;
 }
 
+.section-star-slider,
+.section-oil-slider,
+.section-stocks-slider,
+.section-exchange_green-slider,
+.section-exchange_violet-slider {
+    /*display: block;*/
+    display: none;
+}
+
+.section-star-slider.active,
+.section-oil-slider.active,
+.section-stocks-slider.active,
+.section-exchange_green-slider.active,
+.section-exchange_violet-slider.active {
+    /*display: block;*/
+    display: block;
+}
+
+
 .section-main-content-progress-bar-lines {
     width: 140px;
     height: 3px;

@@ -72,6 +72,41 @@ $(document).ready(function ($) {
         $(this).toggleClass('active');
     });
 
+    $('.section-main-content-progress-bar-item-star-border').click(function () {
+        $('.section-star-slider').addClass('active');
+        $('.section-oil-slider').removeClass('active');
+        $('.section-stocks-slider').removeClass('active');
+    });
+
+    $('.section-main-content-progress-bar-item-oil-border').click(function () {
+        $('.section-oil-slider').addClass('active');
+        $('.section-star-slider').removeClass('active');
+        $('.section-stocks-slider').removeClass('active');
+    });
+
+    $('.section-main-content-progress-bar-item-rating-border').click(function () {
+        $('.section-stocks-slider').addClass('active');
+        $('.section-oil-slider').removeClass('active');
+        $('.section-exchange_green-slider').removeClass('active');
+    });
+
+    $('.section-main-content-progress-bar-item-exch-grn-border').click(function () {
+        $('.section-exchange_green-slider').addClass('active');
+        $('.section-stocks-slider').removeClass('active');
+        $('.section-oil-slider').removeClass('active');
+        $('.section-star-slider').removeClass('active');
+        $('.section-exchange_violet-slider').removeClass('active');
+    });
+
+    $('.section-main-content-progress-bar-item-exch-viol-border').click(function () {
+        $('.section-exchange_violet-slider').addClass('active');
+        $('.section-stocks-slider').removeClass('active');
+        $('.section-exchange_green-slider').removeClass('active');
+        $('.section-oil-slider').removeClass('active');
+        $('.section-star-slider').removeClass('active');
+    });
+
+
     // при клике на section-main-content-progress-bar-item-star-border должен выдаваться другой слайцер с другим контентом внутри.
     // $('.section-main-content-progress-bar-item-star-border').click(function () {
     //     $('.section-main-content-slider-items-star_section').removeClass('not-active')
