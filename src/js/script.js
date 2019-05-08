@@ -144,39 +144,6 @@ $(document).ready(function ($) {
         //     }]
     });
 
-
-    // section-main-content-slider-items-oil_section
-
-    // $('.section-main-content-slider-item-stocks_section').slick({
-    //     infinite: true,
-    //     slidesToShow: 4,
-    //     slidesToScroll: 4,
-    //     dots: true,
-    //     dotsClass: "custom-dots",
-    //     // autoplay: true,
-    //     // autoplaySpeed: 7000,
-    //     responsive: [{
-    //         breakpoint: 481,
-    //         settings: {
-    //             slidesToShow: 1,
-    //             arrows: true,
-    //             dots: true,
-    //             slidesToScroll: 1
-    //         }
-    //     },
-    //         {
-    //             breakpoint: 320,
-    //             settings: {
-    //                 slidesToShow: 1,
-    //                 arrows: false,
-    //                 dots: false,
-    //                 slidesToScroll: 1
-    //             }
-    //         }]
-    //
-    // });
-
-
     // active tabs at slider
     $('.section-main-content-slider-item').click(function () {
         $('.section-main-content-slider-item').removeClass('tab-active');
@@ -188,6 +155,25 @@ $(document).ready(function ($) {
         $('.bar-item').removeClass('active');
         $(this).toggleClass('active');
     });
+
+
+    $('.section-main-content-progress-bar-item-star-border').click(function () {
+        if (($('.section-main-content-progress-bar-item-star-border').onclick) === undefined) {
+            $('.section-oil-slider').slick('unslick');
+            $('.section-stocks-slider').slick('unslick');
+            $('.section-exchange_green-slider').slick('unslick');
+            $('.section-exchange_violet-slider').slick('unslick');
+        }
+    });
+
+    // $('.section-main-content-progress-bar-item-oil-border').click(function () {
+    //    if (($('.section-main-content-progress-bar-item-oil-border').onclick) === undefined) {
+    //        $('.section-star-slider').slick('unslick');
+    //        $('.section-stocks-slider').slick('unslick');
+    //        $('.section-exchange_green-slider').slick('unslick');
+    //        $('.section-exchange_violet-slider').slick('unslick');
+    //    }
+    // });
 
 
     $('.section-main-content-progress-bar-item-star-border').click(function () {
