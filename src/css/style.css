@@ -45,30 +45,34 @@
     font-weight: 800;
 }
 
-.section-main-content-slider-items-star_section {
-    width: 900px;
-}
-
-.section-main-content-slider-items-star_section.not-active {
+.not-active {
     display: none;
 }
 
+/*.section-main-content-slider-items-star_section {*/
+/*    width: 900px;*/
+/*}*/
 
-.section-main-content-slider-items-oil_section.not-active {
-    display: none;
-}
+/*.section-main-content-slider-items-star_section.not-active {*/
+/*    display: none;*/
+/*}*/
 
-.section-main-content-slider-items-oil_section.active {
-    width: 900px;
-}
 
-.section-main-content-slider-item-stocks_section.active {
-    width: 900px;
-}
+/*.section-main-content-slider-items-oil_section.not-active {*/
+/*    display: none;*/
+/*}*/
 
-.section-main-content-slider-item-stocks_section {
-    display: none;
-}
+/*.section-main-content-slider-items-oil_section.active {*/
+/*    width: 900px;*/
+/*}*/
+
+/*.section-main-content-slider-item-stocks_section.active {*/
+/*    width: 900px;*/
+/*}*/
+
+/*.section-main-content-slider-item-stocks_section {*/
+/*    display: none;*/
+/*}*/
 
 .section-main-content-slider-item {
     margin-top: 100px;
@@ -135,6 +139,43 @@
 .section-main-content-progress-bar {
     margin-top: 60px;
     width: 950px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.tabs-wrapper{
+    width: 800px;
+    margin: 0 auto;
+}
+
+ul.tabs{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+ul.tabs li{
+    background: none;
+    color: #222;
+    display: inline-block;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+ul.tabs li.current{
+    background: #ededed;
+    color: #222;
+}
+
+.tab-content{
+    display: none;
+    background: #ededed;
+    padding: 15px;
+}
+
+.tab-content.current{
+    display: inherit;
 }
 
 .section-star-slider,
@@ -151,6 +192,7 @@
 .section-exchange_green-slider.active,
 .section-exchange_violet-slider.active {
     display: block;
+    width: 800px;
 }
 
 .slider-wrapper {
@@ -175,14 +217,15 @@
     margin-bottom: 20px;
 }
 
-.section-main-content-progress-bar-items > p {
+.section-main-content-progress-bar-item >
+.star-title,
+.oil-title,
+.stocks-title,
+.green-title,
+.violet-title {
     display: none;
+    transition: .4s;
 }
-
-/*.section-main-content-progress-bar-items > p.active {*/
-/*    font-weight: 800;*/
-/*    display: block;*/
-/*}*/
 
 .star-title.active,
 .oil-title.active,
@@ -191,10 +234,6 @@
 .green-title.active {
     font-weight: 800;
     display: block;
-    /*position: absolute;*/
-    /*top: 200px;*/
-    /*left: 48.5%;*/
-    /*top: -20px;*/
 }
 
 .section-main-content-progress-bar-items > img {
@@ -459,7 +498,9 @@
 
 .slick-list {
     margin: 0 -5px 0 -5px;
-    display: none;
+    /*width: 0;*/
+    /*height: 0;*/
+    /*display: none;*/
 }
 
 /*__________*/
