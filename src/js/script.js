@@ -376,6 +376,7 @@ $(document).ready(function ($) {
         $('.star-title').addClass('active');
         $('.oil-title').removeClass('active');
         $('.stocks-title').removeClass('active');
+        $('.violet-title').removeClass('active');
         $('.section-oil-slider').removeClass('active');
         $('.section-stocks-slider').removeClass('active');
         $('.section-exchange_green-slider').removeClass('active');
@@ -386,10 +387,12 @@ $(document).ready(function ($) {
         $('.section-oil-slider').addClass('active');
         $('.oil-title').addClass('active');
         $('.stocks-title').removeClass('active');
+        $('.green-title').removeClass('active');
         $('.star-title').removeClass('active');
         // $('.').addClass('active');
         // $('.section-main-content-progress-bar-items > p:nth-child(1)').removeClass('active');
         $('.section-star-slider').removeClass('active');
+        $('.violet-title').removeClass('active');
         $('.section-stocks-slider').removeClass('active');
         $('.section-exchange_green-slider').removeClass('active');
         $('.section-exchange_violet-slider').removeClass('active');
@@ -400,6 +403,8 @@ $(document).ready(function ($) {
         $('.stocks-title').addClass('active');
         $('.star-title').removeClass('active');
         $('.oil-title').removeClass('active');
+        $('.green-title').removeClass('active');
+        $('.violet-title').removeClass('active');
         $('.section-oil-slider').removeClass('active');
         $('.section-exchange_green-slider').removeClass('active');
         $('.section-exchange_violet-slider').removeClass('active');
@@ -408,19 +413,29 @@ $(document).ready(function ($) {
 
     $('.section-main-content-progress-bar-item-exch-grn-border').click(function () {
         $('.section-exchange_green-slider').addClass('active');
+        $('.green-title').addClass('active');
+        $('.star-title').removeClass('active');
+        $('.stocks-title').removeClass('active');
         $('.section-stocks-slider').removeClass('active');
         $('.section-oil-slider').removeClass('active');
         $('.section-star-slider').removeClass('active');
         $('.section-exchange_violet-slider').removeClass('active');
+        $('.violet-title').removeClass('active');
     });
 
 
     $('.section-main-content-progress-bar-item-exch-viol-border').click(function () {
         $('.section-exchange_violet-slider').addClass('active');
+        $('.violet-title').addClass('active');
+        $('.stocks-title').removeClass('active');
         $('.section-stocks-slider').removeClass('active');
+        $('.green-title').removeClass('active');
+        $('.star-title').removeClass('active');
         $('.section-exchange_green-slider').removeClass('active');
         $('.section-oil-slider').removeClass('active');
+        $('.oil-title').removeClass('active');
         $('.section-star-slider').removeClass('active');
+        // $('.star-title').removeClass('active');
     });
 
 
