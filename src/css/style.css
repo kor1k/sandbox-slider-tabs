@@ -146,8 +146,9 @@
 }
 
 .tabs-wrapper{
-    width: 800px;
-    margin: 0 auto;
+    width: 900px;
+    /*margin-top: 50px;*/
+    margin: 50px 0 100px 0;
 }
 
 ul.tabs{
@@ -164,7 +165,7 @@ ul.tabs li{
 }
 
 ul.tabs li.current{
-    background: #ededed;
+    /*background: #ededed;*/
     color: #222;
 }
 

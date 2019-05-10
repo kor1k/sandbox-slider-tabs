@@ -8,14 +8,13 @@ $(document).ready(function ($) {
     //     }]
     // };
     $('.section-star-slider, .section-oil-slider, .section-stocks-slider, .section-exchange_green-slider, .section-exchange_violet-slider').slick({
-        infinite: true,
-        slidesToShow: 3,
-        slidesToScroll: 3,
-        className: 'section-star-slider',
+        // infinite: true,
+        slidesToShow: 4,
+        slidesToScroll: 4,
         dots: true,
         dotsClass: "custom-dots",
         autoplay: true,
-        autoplaySpeed: 7000,
+        autoplaySpeed: 1000,
         responsive: [{
             breakpoint: 481,
             settings: {
@@ -36,6 +35,118 @@ $(document).ready(function ($) {
             }]
     });
 
+    // $('.section-oil-slider').slick({
+    //     // infinite: true,
+    //     slidesToShow: 4,
+    //     slidesToScroll: 4,
+    //     dots: true,
+    //     dotsClass: "custom-dots",
+    //     autoplay: true,
+    //     autoplaySpeed: 1000,
+    //     responsive: [{
+    //         breakpoint: 481,
+    //         settings: {
+    //             slidesToShow: 1,
+    //             arrows: true,
+    //             dots: true,
+    //             slidesToScroll: 1
+    //         }
+    //     },
+    //         {
+    //             breakpoint: 320,
+    //             settings: {
+    //                 slidesToShow: 1,
+    //                 arrows: false,
+    //                 dots: false,
+    //                 slidesToScroll: 1
+    //             }
+    //         }]
+    // });
+    //
+    // $('.section-stocks-slider').slick({
+    //     // infinite: true,
+    //     slidesToShow: 4,
+    //     slidesToScroll: 4,
+    //     dots: true,
+    //     dotsClass: "custom-dots",
+    //     autoplay: true,
+    //     autoplaySpeed: 1000,
+    //     responsive: [{
+    //         breakpoint: 481,
+    //         settings: {
+    //             slidesToShow: 1,
+    //             arrows: true,
+    //             dots: true,
+    //             slidesToScroll: 1
+    //         }
+    //     },
+    //         {
+    //             breakpoint: 320,
+    //             settings: {
+    //                 slidesToShow: 1,
+    //                 arrows: false,
+    //                 dots: false,
+    //                 slidesToScroll: 1
+    //             }
+    //         }]
+    // });
+    //
+    // $('.section-exchange_green-slider').slick({
+    //     // infinite: true,
+    //     slidesToShow: 4,
+    //     slidesToScroll: 4,
+    //     dots: true,
+    //     dotsClass: "custom-dots",
+    //     autoplay: true,
+    //     autoplaySpeed: 1000,
+    //     responsive: [{
+    //         breakpoint: 481,
+    //         settings: {
+    //             slidesToShow: 1,
+    //             arrows: true,
+    //             dots: true,
+    //             slidesToScroll: 1
+    //         }
+    //     },
+    //         {
+    //             breakpoint: 320,
+    //             settings: {
+    //                 slidesToShow: 1,
+    //                 arrows: false,
+    //                 dots: false,
+    //                 slidesToScroll: 1
+    //             }
+    //         }]
+    // });
+    //
+    // $('.section-exchange_violet-slider').slick({
+    //     // infinite: true,
+    //     slidesToShow: 4,
+    //     slidesToScroll: 4,
+    //     dots: true,
+    //     dotsClass: "custom-dots",
+    //     // autoplay: true,
+    //     // autoplaySpeed: 1000,
+    //     responsive: [{
+    //         breakpoint: 481,
+    //         settings: {
+    //             slidesToShow: 1,
+    //             arrows: true,
+    //             dots: true,
+    //             slidesToScroll: 1
+    //         }
+    //     },
+    //         {
+    //             breakpoint: 320,
+    //             settings: {
+    //                 slidesToShow: 1,
+    //                 arrows: false,
+    //                 dots: false,
+    //                 slidesToScroll: 1
+    //             }
+    //         }]
+    // });
+
 
     // active tabs at slider
     $('.section-main-content-slider-item').click(function () {
@@ -51,60 +162,14 @@ $(document).ready(function ($) {
     });
 
     $(document).ready(function () {
-
         $('ul.tabs li').click(function () {
             var tab_id = $(this).attr('data-tab');
-
             $('ul.tabs li').removeClass('current');
             $('.tab-content').removeClass('current');
-
             $(this).addClass('current');
             $("#" + tab_id).addClass('current');
         })
-
-    })
-    //TODO: MAKE IT LIKE TABS. IN TAB SHOULD BE SLICKS WITH RIGHT CONTENT FOR EACH CIRCLE!!!!!!!!!!!!
-    //TODO: MAKE IT LIKE TABS. IN TAB SHOULD BE SLICKS WITH RIGHT CONTENT FOR EACH CIRCLE!!!!!!!!!!!!
-    //TODO: MAKE IT LIKE TABS. IN TAB SHOULD BE SLICKS WITH RIGHT CONTENT FOR EACH CIRCLE!!!!!!!!!!!!
-    //TODO: MAKE IT LIKE TABS. IN TAB SHOULD BE SLICKS WITH RIGHT CONTENT FOR EACH CIRCLE!!!!!!!!!!!!
-    //TODO: MAKE IT LIKE TABS. IN TAB SHOULD BE SLICKS WITH RIGHT CONTENT FOR EACH CIRCLE!!!!!!!!!!!!
-    //TODO: MAKE IT LIKE TABS. IN TAB SHOULD BE SLICKS WITH RIGHT CONTENT FOR EACH CIRCLE!!!!!!!!!!!!
-    //TODO: MAKE IT LIKE TABS. IN TAB SHOULD BE SLICKS WITH RIGHT CONTENT FOR EACH CIRCLE!!!!!!!!!!!!
-    //TODO: MAKE IT LIKE TABS. IN TAB SHOULD BE SLICKS WITH RIGHT CONTENT FOR EACH CIRCLE!!!!!!!!!!!!
-    //TODO: MAKE IT LIKE TABS. IN TAB SHOULD BE SLICKS WITH RIGHT CONTENT FOR EACH CIRCLE!!!!!!!!!!!!
-    //TODO: MAKE IT LIKE TABS. IN TAB SHOULD BE SLICKS WITH RIGHT CONTENT FOR EACH CIRCLE!!!!!!!!!!!!
-    //TODO: MAKE IT LIKE TABS. IN TAB SHOULD BE SLICKS WITH RIGHT CONTENT FOR EACH CIRCLE!!!!!!!!!!!!
-    //TODO: MAKE IT LIKE TABS. IN TAB SHOULD BE SLICKS WITH RIGHT CONTENT FOR EACH CIRCLE!!!!!!!!!!!!
-    //TODO: MAKE IT LIKE TABS. IN TAB SHOULD BE SLICKS WITH RIGHT CONTENT FOR EACH CIRCLE!!!!!!!!!!!!
-    //TODO: MAKE IT LIKE TABS. IN TAB SHOULD BE SLICKS WITH RIGHT CONTENT FOR EACH CIRCLE!!!!!!!!!!!!
-    //TODO: MAKE IT LIKE TABS. IN TAB SHOULD BE SLICKS WITH RIGHT CONTENT FOR EACH CIRCLE!!!!!!!!!!!!
-    //TODO: MAKE IT LIKE TABS. IN TAB SHOULD BE SLICKS WITH RIGHT CONTENT FOR EACH CIRCLE!!!!!!!!!!!!
-    //TODO: MAKE IT LIKE TABS. IN TAB SHOULD BE SLICKS WITH RIGHT CONTENT FOR EACH CIRCLE!!!!!!!!!!!!
-    //TODO: MAKE IT LIKE TABS. IN TAB SHOULD BE SLICKS WITH RIGHT CONTENT FOR EACH CIRCLE!!!!!!!!!!!!
-    //TODO: MAKE IT LIKE TABS. IN TAB SHOULD BE SLICKS WITH RIGHT CONTENT FOR EACH CIRCLE!!!!!!!!!!!!
-    //TODO: MAKE IT LIKE TABS. IN TAB SHOULD BE SLICKS WITH RIGHT CONTENT FOR EACH CIRCLE!!!!!!!!!!!!
-    //TODO: MAKE IT LIKE TABS. IN TAB SHOULD BE SLICKS WITH RIGHT CONTENT FOR EACH CIRCLE!!!!!!!!!!!!
-    //TODO: MAKE IT LIKE TABS. IN TAB SHOULD BE SLICKS WITH RIGHT CONTENT FOR EACH CIRCLE!!!!!!!!!!!!
-    //TODO: MAKE IT LIKE TABS. IN TAB SHOULD BE SLICKS WITH RIGHT CONTENT FOR EACH CIRCLE!!!!!!!!!!!!
-    //TODO: MAKE IT LIKE TABS. IN TAB SHOULD BE SLICKS WITH RIGHT CONTENT FOR EACH CIRCLE!!!!!!!!!!!!
-    //TODO: MAKE IT LIKE TABS. IN TAB SHOULD BE SLICKS WITH RIGHT CONTENT FOR EACH CIRCLE!!!!!!!!!!!!
-    //TODO: MAKE IT LIKE TABS. IN TAB SHOULD BE SLICKS WITH RIGHT CONTENT FOR EACH CIRCLE!!!!!!!!!!!!
-    //TODO: MAKE IT LIKE TABS. IN TAB SHOULD BE SLICKS WITH RIGHT CONTENT FOR EACH CIRCLE!!!!!!!!!!!!
-    //TODO: MAKE IT LIKE TABS. IN TAB SHOULD BE SLICKS WITH RIGHT CONTENT FOR EACH CIRCLE!!!!!!!!!!!!
-    //TODO: MAKE IT LIKE TABS. IN TAB SHOULD BE SLICKS WITH RIGHT CONTENT FOR EACH CIRCLE!!!!!!!!!!!!
-    //TODO: MAKE IT LIKE TABS. IN TAB SHOULD BE SLICKS WITH RIGHT CONTENT FOR EACH CIRCLE!!!!!!!!!!!!
-    //TODO: MAKE IT LIKE TABS. IN TAB SHOULD BE SLICKS WITH RIGHT CONTENT FOR EACH CIRCLE!!!!!!!!!!!!
-    //TODO: MAKE IT LIKE TABS. IN TAB SHOULD BE SLICKS WITH RIGHT CONTENT FOR EACH CIRCLE!!!!!!!!!!!!
-    //TODO: MAKE IT LIKE TABS. IN TAB SHOULD BE SLICKS WITH RIGHT CONTENT FOR EACH CIRCLE!!!!!!!!!!!!
-    //TODO: MAKE IT LIKE TABS. IN TAB SHOULD BE SLICKS WITH RIGHT CONTENT FOR EACH CIRCLE!!!!!!!!!!!!
-    //TODO: MAKE IT LIKE TABS. IN TAB SHOULD BE SLICKS WITH RIGHT CONTENT FOR EACH CIRCLE!!!!!!!!!!!!
-    //TODO: MAKE IT LIKE TABS. IN TAB SHOULD BE SLICKS WITH RIGHT CONTENT FOR EACH CIRCLE!!!!!!!!!!!!
-    //TODO: MAKE IT LIKE TABS. IN TAB SHOULD BE SLICKS WITH RIGHT CONTENT FOR EACH CIRCLE!!!!!!!!!!!!
-    //TODO: MAKE IT LIKE TABS. IN TAB SHOULD BE SLICKS WITH RIGHT CONTENT FOR EACH CIRCLE!!!!!!!!!!!!
-    //TODO: MAKE IT LIKE TABS. IN TAB SHOULD BE SLICKS WITH RIGHT CONTENT FOR EACH CIRCLE!!!!!!!!!!!!
-    //TODO: MAKE IT LIKE TABS. IN TAB SHOULD BE SLICKS WITH RIGHT CONTENT FOR EACH CIRCLE!!!!!!!!!!!!
-    //TODO: MAKE IT LIKE TABS. IN TAB SHOULD BE SLICKS WITH RIGHT CONTENT FOR EACH CIRCLE!!!!!!!!!!!!
-    //TODO: MAKE IT LIKE TABS. IN TAB SHOULD BE SLICKS WITH RIGHT CONTENT FOR EACH CIRCLE!!!!!!!!!!!!
+    });
     //TODO: MAKE IT LIKE TABS. IN TAB SHOULD BE SLICKS WITH RIGHT CONTENT FOR EACH CIRCLE!!!!!!!!!!!!
     //TODO: MAKE IT LIKE TABS. IN TAB SHOULD BE SLICKS WITH RIGHT CONTENT FOR EACH CIRCLE!!!!!!!!!!!!
     //TODO: MAKE IT LIKE TABS. IN TAB SHOULD BE SLICKS WITH RIGHT CONTENT FOR EACH CIRCLE!!!!!!!!!!!!
@@ -173,93 +238,93 @@ $(document).ready(function ($) {
     //     console.log('$(\'.check-circle-violet_exc\').onclick === undefined!!!')
     // }
 
-    $('.section-main-content-progress-bar-item-star-border').click(function () {
-        $('.section-star-slider').addClass('active');
-        $('.star-title').addClass('active');
-        $('.oil-title').removeClass('active');
-        $('.stocks-title').removeClass('active');
-        $('.violet-title').removeClass('active');
-        $('.section-oil-slider').removeClass('active');
-        $('.section-stocks-slider').removeClass('active');
-        $('.section-exchange_green-slider').removeClass('active');
-        $('.section-exchange_violet-slider').removeClass('active');
-
-        $('.section-oil-slider').css('display', 'none');
-        $('.section-stocks-slider').css('display', 'none');
-        $('.section-exchange_green-slider').css('display', 'none');
-        $('.section-exchange_violet-slider').css('display', 'none');
-    });
-
-    $('.section-main-content-progress-bar-item-oil-border').click(function () {
-        $('.section-oil-slider').addClass('active');
-        $('.oil-title').addClass('active');
-        $('.stocks-title').removeClass('active');
-        $('.green-title').removeClass('active');
-        $('.star-title').removeClass('active');
-        $('.violet-title').removeClass('active');
-        // $('.section-star-slider').removeClass('active');
-        // $('.section-stocks-slider').removeClass('active');
-        // $('.section-exchange_green-slider').removeClass('active');
-        // $('.section-exchange_violet-slider').removeClass('active');
-
-        $('.section-star-slider').css('display', 'none');
-        $('.section-stocks-slider').css('display', 'none');
-        $('.section-exchange_green-slider').css('display', 'none');
-        $('.section-exchange_violet-slider').css('display', 'none');
-    });
-
-    $('.section-main-content-progress-bar-item-rating-border').click(function () {
-        $('.section-stocks-slider').addClass('active');
-        $('.stocks-title').addClass('active');
-        $('.star-title').removeClass('active');
-        $('.oil-title').removeClass('active');
-        $('.green-title').removeClass('active');
-        $('.violet-title').removeClass('active');
-        // $('.section-oil-slider').removeClass('active');
-        // $('.section-exchange_green-slider').removeClass('active');
-        // $('.section-exchange_violet-slider').removeClass('active');
-        // $('.section-star-slider').removeClass('active');
-
-        $('.section-star-slider').css('display', 'none');
-        $('.section-oil-slider').css('display', 'none');
-        $('.section-exchange_green-slider').css('display', 'none');
-        $('.section-exchange_violet-slider').css('display', 'none');
-    });
-
-    $('.section-main-content-progress-bar-item-exch-grn-border').click(function () {
-        $('.section-exchange_green-slider').addClass('active');
-        $('.green-title').addClass('active');
-        $('.star-title').removeClass('active');
-        $('.stocks-title').removeClass('active');
-        $('.violet-title').removeClass('active');
-        // $('.section-oil-slider').removeClass('active');
-        // $('.section-star-slider').removeClass('active');
-        // $('.section-exchange_violet-slider').removeClass('active');
-        // $('.section-stocks-slider').removeClass('active');
-
-        $('.section-star-slider').css('display', 'none');
-        $('.section-oil-slider').css('display', 'none');
-        $('.section-stocks-slider').css('display', 'none');
-        $('.section-exchange_violet-slider').css('display', 'none');
-    });
-
-    $('.section-main-content-progress-bar-item-exch-viol-border').click(function () {
-        $('.section-exchange_violet-slider').addClass('active');
-        $('.violet-title').addClass('active');
-        $('.stocks-title').removeClass('active');
-        $('.green-title').removeClass('active');
-        $('.star-title').removeClass('active');
-        $('.oil-title').removeClass('active');
-        // $('.section-stocks-slider').removeClass('active');
-        // $('.section-exchange_green-slider').removeClass('active');
-        // $('.section-oil-slider').removeClass('active');
-        // $('.section-star-slider').removeClass('active');
-
-        $('.section-star-slider').css('display', 'none');
-        $('.section-oil-slider').css('display', 'none');
-        $('.section-stocks-slider').css('display', 'none');
-        $('.section-exchange_green-slider').css('display', 'none');
-    });
+    // $('.section-main-content-progress-bar-item-star-border').click(function () {
+    //     $('.section-star-slider').addClass('active');
+    //     $('.star-title').addClass('active');
+    //     $('.oil-title').removeClass('active');
+    //     $('.stocks-title').removeClass('active');
+    //     $('.violet-title').removeClass('active');
+    //     $('.section-oil-slider').removeClass('active');
+    //     $('.section-stocks-slider').removeClass('active');
+    //     $('.section-exchange_green-slider').removeClass('active');
+    //     $('.section-exchange_violet-slider').removeClass('active');
+    //
+    //     $('.section-oil-slider').css('display', 'none');
+    //     $('.section-stocks-slider').css('display', 'none');
+    //     $('.section-exchange_green-slider').css('display', 'none');
+    //     $('.section-exchange_violet-slider').css('display', 'none');
+    // });
+    //
+    // $('.section-main-content-progress-bar-item-oil-border').click(function () {
+    //     $('.section-oil-slider').addClass('active');
+    //     $('.oil-title').addClass('active');
+    //     $('.stocks-title').removeClass('active');
+    //     $('.green-title').removeClass('active');
+    //     $('.star-title').removeClass('active');
+    //     $('.violet-title').removeClass('active');
+    //     // $('.section-star-slider').removeClass('active');
+    //     // $('.section-stocks-slider').removeClass('active');
+    //     // $('.section-exchange_green-slider').removeClass('active');
+    //     // $('.section-exchange_violet-slider').removeClass('active');
+    //
+    //     $('.section-star-slider').css('display', 'none');
+    //     $('.section-stocks-slider').css('display', 'none');
+    //     $('.section-exchange_green-slider').css('display', 'none');
+    //     $('.section-exchange_violet-slider').css('display', 'none');
+    // });
+    //
+    // $('.section-main-content-progress-bar-item-rating-border').click(function () {
+    //     $('.section-stocks-slider').addClass('active');
+    //     $('.stocks-title').addClass('active');
+    //     $('.star-title').removeClass('active');
+    //     $('.oil-title').removeClass('active');
+    //     $('.green-title').removeClass('active');
+    //     $('.violet-title').removeClass('active');
+    //     // $('.section-oil-slider').removeClass('active');
+    //     // $('.section-exchange_green-slider').removeClass('active');
+    //     // $('.section-exchange_violet-slider').removeClass('active');
+    //     // $('.section-star-slider').removeClass('active');
+    //
+    //     $('.section-star-slider').css('display', 'none');
+    //     $('.section-oil-slider').css('display', 'none');
+    //     $('.section-exchange_green-slider').css('display', 'none');
+    //     $('.section-exchange_violet-slider').css('display', 'none');
+    // });
+    //
+    // $('.section-main-content-progress-bar-item-exch-grn-border').click(function () {
+    //     $('.section-exchange_green-slider').addClass('active');
+    //     $('.green-title').addClass('active');
+    //     $('.star-title').removeClass('active');
+    //     $('.stocks-title').removeClass('active');
+    //     $('.violet-title').removeClass('active');
+    //     // $('.section-oil-slider').removeClass('active');
+    //     // $('.section-star-slider').removeClass('active');
+    //     // $('.section-exchange_violet-slider').removeClass('active');
+    //     // $('.section-stocks-slider').removeClass('active');
+    //
+    //     $('.section-star-slider').css('display', 'none');
+    //     $('.section-oil-slider').css('display', 'none');
+    //     $('.section-stocks-slider').css('display', 'none');
+    //     $('.section-exchange_violet-slider').css('display', 'none');
+    // });
+    //
+    // $('.section-main-content-progress-bar-item-exch-viol-border').click(function () {
+    //     $('.section-exchange_violet-slider').addClass('active');
+    //     $('.violet-title').addClass('active');
+    //     $('.stocks-title').removeClass('active');
+    //     $('.green-title').removeClass('active');
+    //     $('.star-title').removeClass('active');
+    //     $('.oil-title').removeClass('active');
+    //     // $('.section-stocks-slider').removeClass('active');
+    //     // $('.section-exchange_green-slider').removeClass('active');
+    //     // $('.section-oil-slider').removeClass('active');
+    //     // $('.section-star-slider').removeClass('active');
+    //
+    //     $('.section-star-slider').css('display', 'none');
+    //     $('.section-oil-slider').css('display', 'none');
+    //     $('.section-stocks-slider').css('display', 'none');
+    //     $('.section-exchange_green-slider').css('display', 'none');
+    // });
 
 
     // TODO: add 4 different content in sliders to each round image
