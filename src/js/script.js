@@ -12,9 +12,11 @@ $(document).ready(function ($) {
         slidesToShow: 4,
         slidesToScroll: 4,
         dots: true,
+        // destroy: slick,
+        // slickPlay: true,
         dotsClass: "custom-dots",
         autoplay: true,
-        autoplaySpeed: 1000,
+        autoplaySpeed: 1500,
         responsive: [{
             breakpoint: 481,
             settings: {
@@ -149,10 +151,10 @@ $(document).ready(function ($) {
 
 
     // active tabs at slider
-    $('.section-main-content-slider-item').click(function () {
-        $('.section-main-content-slider-item').removeClass('tab-active');
-        $(this).toggleClass('tab-active');
-    });
+    // $('.section-main-content-slider-item').click(function () {
+    //     $('.section-main-content-slider-item').removeClass('tab-active');
+    //     $(this).toggleClass('tab-active');
+    // });
 
 
     // active circles (categories)
