@@ -7,34 +7,34 @@ $(document).ready(function ($) {
     //         settings: "unslick"
     //     }]
     // };
-    // $('.section-star-slider, .section-oil-slider, .section-stocks-slider, .section-exchange_green-slider, .section-exchange_violet-slider').slick({
-    //     infinite: true,
-    //     slidesToShow: 3,
-    //     slidesToScroll: 3,
-    //     className: 'section-star-slider',
-    //     dots: true,
-    //     dotsClass: "custom-dots",
-    //     autoplay: true,
-    //     autoplaySpeed: 7000,
-    //     responsive: [{
-    //         breakpoint: 481,
-    //         settings: {
-    //             slidesToShow: 1,
-    //             arrows: true,
-    //             dots: true,
-    //             slidesToScroll: 1
-    //         }
-    //     },
-    //         {
-    //             breakpoint: 320,
-    //             settings: {
-    //                 slidesToShow: 1,
-    //                 arrows: false,
-    //                 dots: false,
-    //                 slidesToScroll: 1
-    //             }
-    //         }]
-    // });
+    $('.section-star-slider, .section-oil-slider, .section-stocks-slider, .section-exchange_green-slider, .section-exchange_violet-slider').slick({
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        className: 'section-star-slider',
+        dots: true,
+        dotsClass: "custom-dots",
+        autoplay: true,
+        autoplaySpeed: 7000,
+        responsive: [{
+            breakpoint: 481,
+            settings: {
+                slidesToShow: 1,
+                arrows: true,
+                dots: true,
+                slidesToScroll: 1
+            }
+        },
+            {
+                breakpoint: 320,
+                settings: {
+                    slidesToShow: 1,
+                    arrows: false,
+                    dots: false,
+                    slidesToScroll: 1
+                }
+            }]
+    });
 
 
     // active tabs at slider
@@ -62,7 +62,8 @@ $(document).ready(function ($) {
             $("#" + tab_id).addClass('current');
         })
 
-    })//TODO: MAKE IT LIKE TABS. IN TAB SHOULD BE SLICKS WITH RIGHT CONTENT FOR EACH CIRCLE!!!!!!!!!!!!
+    })
+    //TODO: MAKE IT LIKE TABS. IN TAB SHOULD BE SLICKS WITH RIGHT CONTENT FOR EACH CIRCLE!!!!!!!!!!!!
     //TODO: MAKE IT LIKE TABS. IN TAB SHOULD BE SLICKS WITH RIGHT CONTENT FOR EACH CIRCLE!!!!!!!!!!!!
     //TODO: MAKE IT LIKE TABS. IN TAB SHOULD BE SLICKS WITH RIGHT CONTENT FOR EACH CIRCLE!!!!!!!!!!!!
     //TODO: MAKE IT LIKE TABS. IN TAB SHOULD BE SLICKS WITH RIGHT CONTENT FOR EACH CIRCLE!!!!!!!!!!!!

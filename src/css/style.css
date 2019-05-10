@@ -151,8 +151,8 @@
 }
 
 ul.tabs{
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     list-style: none;
 }
 ul.tabs li{
@@ -170,7 +170,7 @@ ul.tabs li.current{
 
 .tab-content{
     display: none;
-    background: #ededed;
+    /*background: #ededed;*/
     padding: 15px;
 }
 
